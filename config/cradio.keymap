@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/mouse.h>
 
 
 &mt {
@@ -16,10 +15,10 @@
 };
 
 
-/ { 
+/ {
     combos {
         compatible = "zmk,combos";
-        combo_esc { 
+        combo_esc {
             timeout-ms = <50>;
             key-positions = <21 22>;
             bindings = <&kp ESC>;
@@ -198,50 +197,48 @@
 
         keymap {
                 compatible = "zmk,keymap";
-                
-       		default_layer {
+		default_layer {
 		bindings = <
-		&kp TAB &kp C &kp L &kp M &trans 						&trans &kp F  &kp U    &kp Z  &kp BKSP
-		&kp I &hm LCTL S &hm LALT R &hm LGUI T &trans 			       	&trans  &hm RGUI N &hm RALT K &hm RCTL A &kp O
-		&hs LSHIFT Q &kp V &kp W &kp D &mt LC(LS(LALT)) SPC &kp E &kp H  &kp Y &td EXCL DOT &hs RSHIFT X
-          				&mt LC(LS(LALT)) SPC &trans &trans &kp E
+		&kp Q &kp W &kp E &kp R &kp T				&kp Y &kp U  &kp I     &kp O   &kp BSPC
+		&kp A &kp S &kp D &kp F &kp G				&kp H &kp J  &kp K     &kp L   &lt 3 P
+		&kp Z &kp X &kp C &kp V &kp B                           &kp N &kp M  &kp COMMA &kp DOT &kp SLASH
+	            &mo 1 &mt LSHIFT SPACE                               &kp LCTRL &mo 2
 		>;
 		};
 
-       		left_layer {
+		left_layer {
 		bindings = <
-		&trans  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR    &trans		&trans &kp LS(COMMA) &kp LS(DOT) &kp CARET &trans
-		&kp TAB    &hm LCTL EQUAL    &hm LALT LA(RBKT)      &hm LGUI LA(LS(RBKT))     &trans 		&trans &hm RGUI LBRC  &hm RALT RBRC &hm RCTL PIPE  &kp AMPS
-  		&hs LSHIFT TILDE    &kp GRAVE 	&kp LA(LBKT) &kp LA(LS(LBKT))  &to 0 	&to 2 &kp LPRN &kp RPRN &kp RBKT  &kp RSHIFT
-					    &to 0 &trans  					&trans &to 2 
+		&kp CARET &kp UNDER  &kp AMPS  &kp PERCENT  &trans		&trans   &trans   &kp SEMI &kp COLON &trans
+		&kp EXCL  &kp AT     &kp HASH  &kp DOLLAR   &trans		&kp LEFT &kp DOWN &kp UP   &kp RIGHT &trans
+		&trans    &trans     &kp LT    &kp GT       &trans	        &trans   &kp HOME &kp END  &kp QMARK &trans
+					    &trans &trans				&kp LC(X) &trans
 		>;
 		};
 
 		right_layer {
 		bindings = <
-		&trans &kp C_PP &kp C_PREV  &kp C_NEXT  &trans    			&trans  &kp N7 &kp N8 &kp N9 &trans
-		&kp TAB  &trans   &hm LALT C_VOL_DN  &hm LGUI C_VOL_UP  &trans  			&trans &hm RGUI N4  &kp N5  &kp N6   &kp EQUAL
-		&hsl LSHIFT 4  &kp PRCNT &kp SLASH &kp STAR &to 0 &trans &kp N1 &kp N2 &td DOT N3  &kp MINUS
-					  &to 0 &trans  				&trans &trans
+		&kp ESC   &kp MINUS &kp LPAR  &kp RPAR  &trans			&trans    &kp N7 &kp N8 &kp N9 &trans
+		&kp TAB   &kp PIPE  &kp LBRC  &kp RBRC  &kp EQUAL		&kp PLUS  &kp N4 &kp N5 &kp N6 &kp RET
+		&kp GRAVE &kp TILDE &kp LBKT  &kp RBKT  &kp BSLH                &kp N0    &kp N1 &kp N2 &kp N3 &kp STAR
+					  &kp LGUI &kp LALT				&trans &trans
 		>;
 		};
 
 		tri_layer {
 		bindings = <
-		&trans  &mwh SCROLL_LEFT    &mmv MOVE_UP    &mwh SCROLL_RIGHT    &trans &trans    &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(LBKT) &trans
-		&kp TAB &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans  						&trans &kp DOWN  &hm RALT UP &hm RCTL RIGHT &kp LG(RBKT)
-		&kp LSHIFT &mkp RCLK  &mwh SCROLL_UP &mwh SCROLL_DOWN &to 0   				&kp RGUI &td HOME PG_DN  &td END PG_UP  &trans &kp RSHIFT  
-					 &to 0 &trans &trans &kp RGUI 
+		&trans  &kp C_VOL_UP  &kp C_VOL_DN  &trans  &trans             &trans  &trans   &kp C_BRI_UP &kp C_BRI_DN &trans
+		&trans  &trans        &trans        &trans  &trans             &trans  &trans   &trans       &trans       &trans
+		&trans  &trans        &trans        &trans  &trans             &trans  &trans   &trans       &trans       &trans
+					 &trans &trans                             &trans &trans
 		>;
 		};
 		bt {
 		bindings = <
-		&trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-		&bootloader  &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-		&bt BT_PRV  &bt BT_NXT &bt BT_CLR &trans &to 0   				&to 1 &trans  &trans  &trans &trans   
-					 &to 0 &trans  					&trans &to 1 
+		&kp LG(Q)  &kp LG(C) &kp LG(V) &kp LG(R) &trans                 &trans &trans &trans &trans &kp LC(LG(Q))
+		&kp LG(A)  &kp LG(S) &kp LG(X) &kp LG(F) &kp LG(LS(N4))         &trans &trans &trans &trans &trans
+		&kp LG(Z)  &kp LG(W) &trans    &kp LG(P) &trans			&trans &trans &trans &trans &trans
+					 &kp LG(COMMA) &kp LG(SPACE)			&trans &trans
 		>;
 		};
-        
 	};
 };
