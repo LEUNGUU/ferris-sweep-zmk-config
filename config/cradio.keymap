@@ -64,8 +64,8 @@
 		left_layer {
 		bindings = <
 		&kp CARET &kp UNDER  &kp AMPS  &kp PERCENT  &trans		&trans   &trans   &kp SEMI &kp COLON &trans
-		&kp EXCL  &kp AT     &kp HASH  &kp DOLLAR   &trans		&kp LEFT &kp DOWN &kp UP   &kp RIGHT &trans
-		&trans    &trans     &kp LT    &kp GT       &trans	        &trans   &kp HOME &kp END  &kp QMARK &trans
+		&kp EXCL  &kp AT     &kp HASH  &kp DOLLAR   &trans		&kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp SQT
+		&trans    &trans     &kp LT    &kp GT       &trans	        &trans   &kp HOME &kp END  &kp QMARK &kp DQT
 					    &trans &trans				&kp LC(X) &trans
 		>;
 		};
