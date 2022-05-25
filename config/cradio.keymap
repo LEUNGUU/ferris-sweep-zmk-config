@@ -57,7 +57,7 @@
 		&kp Q &kp W &kp E &kp R &kp T				&kp Y  &kp U  &kp I     &kp O   &kp BSPC
 		&kp A &kp S &kp D &kp F &kp G				&kp H  &kp J  &kp K     &kp L   &lt 4 P
 		&kp Z &kp X &kp C &kp V &kp B                           &kp N  &kp M  &kp COMMA &kp DOT &kp SLASH
-	            &mo 1 &mt LSHIFT SPACE                               &sk LCTRL &mo 2
+	            &sl 1 &mt LSHIFT SPACE                               &sk LCTRL &sl 2
 		>;
 		};
 
@@ -89,7 +89,7 @@
 		};
 		bt {
 		bindings = <
-		&kp LG(Q)  &kp LG(C) &kp LG(V) &kp LG(R) &trans                 &trans &trans &trans &trans &kp LC(LG(Q))
+		&kp LG(Q)  &kp LG(C) &kp LG(V) &kp LG(R) &trans                 &trans &trans &kp LC(LG(Q)) &trans &trans
 		&kp LG(A)  &kp LG(S) &kp LG(X) &kp LG(F) &kp LG(LS(N4))         &trans &trans &trans &bt BT_NXT &trans
 		&kp LG(Z)  &kp LG(W) &trans    &kp LG(P) &trans			&trans &trans &trans &bt BT_PRV &bt BT_CLR
 					 &kp LG(COMMA) &kp LG(SPACE)			&trans &kp RSHIFT
