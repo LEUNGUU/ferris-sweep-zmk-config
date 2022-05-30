@@ -15,6 +15,14 @@
     tapping_term_ms = <200>;
 };
 
+&mmv {
+    time-to-max-speed-ms = <500>;
+};
+
+&mwh {
+    acceleration-exponent=<1>;
+};
+
 
 / {
     combos {
