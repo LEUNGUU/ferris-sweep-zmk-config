@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: krikun98
-      revision: mouse-pr
+      revision: mouse-pr-acceleration
       import: app/west.yml
   self:
     path: config
