@@ -101,8 +101,8 @@
 		bt {
 		bindings = <
 		&kp LG(Q)  &kp LC(C) &kp LC(V) &kp LG(U) &trans                 &trans &trans &trans &trans &trans
-		&kp LC(P)  &kp LC(S) &kp LG(J) &kp LG(F) &kp LC(LS(N2))         &trans &trans &trans &bt BT_NXT &trans
-		&kp LC(Z)  &kp LG(W) &trans    &kp LG(V) &trans			        &trans &trans &trans &bt BT_PRV &bt BT_CLR
+		&kp LG(P)  &kp LC(S) &kp LG(J) &kp LG(F) &kp LC(LS(N2))         &trans &trans &trans &bt BT_NXT &trans
+		&kp LC(Z)  &kp LG(W) &kp LG(M) &kp LG(V) &trans			        &trans &trans &trans &bt BT_PRV &bt BT_CLR
 					 &kp LG(COMMA) &kp LG(SPACE)			&trans &kp RSHIFT
 		>;
 		};
