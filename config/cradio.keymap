@@ -100,10 +100,10 @@
 		};
 		bt {
 		bindings = <
-		&kp LG(Q)  &kp LG(C) &kp LG(V) &kp LG(R) &trans                 &trans &trans &trans &trans &trans
-		&kp LG(A)  &kp LG(S) &kp LG(X) &kp LG(F) &kp LG(LS(N4))         &trans &trans &trans &bt BT_NXT &trans
-		&kp LG(Z)  &kp LG(W) &trans    &kp LG(P) &trans			&trans &trans &trans &bt BT_PRV &bt BT_CLR
-					 &kp LG(COMMA) &kp LG(SPACE)			&trans &kp RSHIFT
+		&kp LG(Q)  &kp LG(C) &kp LG(V) &kp LG(R) &kp LG(D)                 &trans &trans &trans &trans &trans
+		&kp LG(A)  &kp LG(S) &kp LG(K) &kp LG(F) &kp LG(LS(N4))         &trans &trans &trans &bt BT_NXT &trans
+		&kp LG(Z)  &kp LG(H) &kp LG(J) &kp LG(L) &kp LG(LS(D))			        &trans &trans &trans &bt BT_PRV &bt BT_CLR
+					 &kp LG(COMMA) &kp LG(SPACE)			&kp LG(O) &kp LG(LS(F))
 		>;
 		};
 	};
